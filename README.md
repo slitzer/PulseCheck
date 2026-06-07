@@ -19,7 +19,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Invoke-ITTool.ps1 -Tic
 Remote `irm` / `iex` style launch after publishing the script:
 
 ```powershell
-iex "& { $(irm '[https://raw.githubusercontent.com/YOURORG/ITTool/main/Invoke-ITTool.ps1](https://github.com/slitzer/PulseCheck/blob/main/Invoke-ITTool.ps1)') } -AppName 'ITTool'"
+irm "https://raw.githubusercontent.com/slitzer/PulseCheck/main/Invoke-ITTool.ps1" | iex
 ```
 
 ## Output
